@@ -1,14 +1,31 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Analysis AI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <h1>Skin Analysis AI</h1>
+    </header>
+    <main>
+        <div class="upload-section">
+            <h2>Upload Your Skin Image</h2>
+            <p>Get an AI-powered analysis of your skin's health.</p>
+            <input type="file" id="image-input" accept="image/*">
+            <label for="image-input" class="upload-label">Choose Image</label>
+            <img id="uploaded-image" src="#" alt="Uploaded Image" style="display: none;">
+            <button id="analyze-button" style="display: none;">Analyze</button>
+        </div>
+        <div class="results-section" style="display: none;">
+            <h2>Analysis Results</h2>
+            <div id="results-content">
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
