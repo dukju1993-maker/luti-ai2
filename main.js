@@ -30,11 +30,11 @@ themeToggle.addEventListener('click', () => {
 
 // Auth Button Listeners
 loginBtn.addEventListener('click', () => {
-    alert('Login feature coming soon!');
+    alert('로그인 기능은 곧 추가될 예정입니다!');
 });
 
 signupBtn.addEventListener('click', () => {
-    alert('Sign Up feature coming soon!');
+    alert('회원가입 기능은 곧 추가될 예정입니다!');
 });
 
 imageInput.addEventListener('change', (event) => {
@@ -52,17 +52,17 @@ imageInput.addEventListener('change', (event) => {
 
 analyzeButton.addEventListener('click', () => {
     resultsSection.style.display = 'block';
-    resultsContent.innerHTML = '<p>Analyzing...</p>';
+    resultsContent.innerHTML = '<p>분석 중...</p>';
 
     setTimeout(() => {
         const results = {
-            Pore: `${Math.floor(Math.random() * 21) + 70}%`,
-            Wrinkle: `${Math.floor(Math.random() * 21) + 60}%`,
-            Acne: `${Math.floor(Math.random() * 11) + 85}%`,
-            Moisture: `${Math.floor(Math.random() * 21) + 40}%`,
+            '모공': `${Math.floor(Math.random() * 21) + 70}%`,
+            '주름': `${Math.floor(Math.random() * 21) + 60}%`,
+            '트러블': `${Math.floor(Math.random() * 11) + 85}%`,
+            '수분': `${Math.floor(Math.random() * 21) + 40}%`,
         };
 
-        let table = '<table><thead><tr><th>Analysis</th><th>Result</th></tr></thead><tbody>';
+        let table = '<table><thead><tr><th>분석 항목</th><th>결과</th></tr></thead><tbody>';
         for (const [key, value] of Object.entries(results)) {
             table += `<tr><td>${key}</td><td>${value}</td></tr>`;
         }

@@ -1,32 +1,32 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin Analysis AI</title>
+    <title>LUTI - AI 피부 분석</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Skin Analysis AI</h1>
+        <h1>LUTI</h1>
         <div class="header-controls">
-            <button id="login-btn" class="nav-btn">Login</button>
-            <button id="signup-btn" class="nav-btn">Sign Up</button>
+            <button id="login-btn" class="nav-btn">로그인</button>
+            <button id="signup-btn" class="nav-btn">회원가입</button>
             <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </div>
     </header>
     <main>
         <div class="upload-section">
-            <h2>Upload Your Skin Image</h2>
-            <p>Get an AI-powered analysis of your skin's health.</p>
+            <h2>피부 이미지 업로드</h2>
+            <p>AI를 통해 당신의 피부 상태를 분석해보세요.</p>
             <input type="file" id="image-input" accept="image/*">
-            <label for="image-input" class="upload-label">Choose Image</label>
-            <img id="uploaded-image" src="#" alt="Uploaded Image" style="display: none;">
-            <button id="analyze-button" style="display: none;">Analyze</button>
+            <label for="image-input" class="upload-label">이미지 선택</label>
+            <img id="uploaded-image" src="#" alt="업로드된 이미지" style="display: none;">
+            <button id="analyze-button" style="display: none;">분석하기</button>
         </div>
         <div class="results-section" style="display: none;">
-            <h2>Analysis Results</h2>
+            <h2>분석 결과</h2>
             <div id="results-content">
             </div>
         </div>
