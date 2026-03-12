@@ -31,7 +31,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    background-image: linear-gradient(rgba(255, 240, 245, 0.4), rgba(255, 240, 245, 0.4)), url('https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: linear-gradient(rgba(255, 240, 245, 0.1), rgba(255, 240, 245, 0.1)), url('https://images.unsplash.com/photo-1570159947484-569c7336cc7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -39,7 +39,7 @@ body {
 }
 
 [data-theme='dark'] body {
-    background-image: linear-gradient(rgba(45, 26, 30, 0.5), rgba(45, 26, 30, 0.5)), url('https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-image: linear-gradient(rgba(45, 26, 30, 0.2), rgba(45, 26, 30, 0.2)), url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
 }
 
 header {
