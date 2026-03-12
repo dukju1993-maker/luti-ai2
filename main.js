@@ -5,6 +5,8 @@ const analyzeButton = document.getElementById('analyze-button');
 const resultsSection = document.querySelector('.results-section');
 const resultsContent = document.getElementById('results-content');
 const themeToggle = document.getElementById('theme-toggle');
+const loginBtn = document.getElementById('login-btn');
+const signupBtn = document.getElementById('signup-btn');
 
 // Theme Toggle Logic
 const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -24,6 +26,15 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
         themeToggle.textContent = '☀️';
     }
+});
+
+// Auth Button Listeners
+loginBtn.addEventListener('click', () => {
+    alert('Login feature coming soon!');
+});
+
+signupBtn.addEventListener('click', () => {
+    alert('Sign Up feature coming soon!');
 });
 
 imageInput.addEventListener('change', (event) => {
